@@ -13,7 +13,7 @@ from django.core.management import call_command
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
 
-def configure(settings=None, command=None, run_migration=False):
+def configure(settings=None, command=None, run_migrations=False):
     """
       settings is a dictionary of UPPERCASE Django settings.
 

@@ -12,9 +12,10 @@ with open('README.md') as readme_file:
 with open('HISTORY.md') as history_file:
     history = history_file.read()
 
-version = '0.1.4'    
+version = '0.1.5'    
 
 if sys.argv[-1] == "publish":
+    os.system("rm -rf dist")
     os.system("python setup.py sdist bdist_wheel")
     os.system("twine upload dist/*")
     os.system("git tag -a %s -m 'version %s'" % (version, version))

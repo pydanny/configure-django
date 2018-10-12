@@ -1,5 +1,9 @@
 # History
 
+## 0.1.5 (2018-10-12)
+
+-   Correction of arguments
+
 ## 0.1.4 (2018-10-12)
 
 -   Add legacy `run_migration` argument
