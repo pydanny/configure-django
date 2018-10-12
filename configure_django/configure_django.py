@@ -13,7 +13,7 @@ from django.core.management import call_command
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
 
-def configure(settings=None, command=None):
+def configure(settings=None, command=None, run_migration=False):
     """
       settings is a dictionary of UPPERCASE Django settings.
 
@@ -45,5 +45,8 @@ def configure(settings=None, command=None):
     except RuntimeError:
         pass
 
-    if command is not Note:
+    if command is not None:
         call_command(*command.split(' '))
+
+    if command is None and run_migration is True:
+        call_command(*['migrate', ])

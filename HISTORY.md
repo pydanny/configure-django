@@ -1,5 +1,9 @@
 # History
 
+## 0.1.4 (2018-10-12)
+
+-   Add legacy `run_migration` argument
+
 ## 0.1.3 (2018-10-12)
 
 -   Corrected import path

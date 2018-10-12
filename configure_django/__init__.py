@@ -4,6 +4,6 @@
 
 __author__ = """Daniel Roy Greenfeld"""
 __email__ = 'pydanny@gmail.com'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 from .configure_django import configure
