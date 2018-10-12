@@ -1,5 +1,9 @@
 # History
 
+## 0.1.7 (2018-10-12)
+
+-   Variable naming correction
+
 ## 0.1.6 (2018-10-12)
 
 -   Address settings namespace issue

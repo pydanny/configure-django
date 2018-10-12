@@ -48,5 +48,5 @@ def configure(settings=None, command=None, run_migrations=False):
     if command is not None:
         call_command(*command.split(' '))
 
-    if command is None and run_migration is True:
+    if command is None and run_migrations is True:
         call_command(*['migrate', ])
