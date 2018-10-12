@@ -5,7 +5,7 @@
 import os
 
 import django
-from django.conf import settings
+from django.conf import settings as django_settings
 from django.core.exceptions import ImproperlyConfigured
 from django.core.management import call_command
 
@@ -39,7 +39,7 @@ def configure(settings=None, command=None, run_migrations=False):
 
     # Configure environment
     try:
-        settings.configure(**settings)
+        django_settings.configure(**settings)
         # TODO I believe this can be removed
         django.setup()
     except RuntimeError:
