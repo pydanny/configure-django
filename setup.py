@@ -21,9 +21,9 @@ if sys.argv[-1] == "publish":
     os.system("git push --tags")
     sys.exit()    
 
-requirements = [ ]
+requirements = []
 
-setup_requirements = [ ]
+setup_requirements = []
 
 test_requirements = [ ]
 
