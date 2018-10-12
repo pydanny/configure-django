@@ -12,7 +12,7 @@ with open('README.md') as readme_file:
 with open('HISTORY.md') as history_file:
     history = history_file.read()
 
-version = '0.1.1'    
+version = '0.1.2'    
 
 if sys.argv[-1] == "publish":
     os.system("python setup.py sdist bdist_wheel")
