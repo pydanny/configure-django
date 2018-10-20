@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ImproperlyConfigured	../configure_django/configure_django.py	/^from django.core.exceptions import ImproperlyConfigured$/;"	kind:namespace	line:9
+TestConfigure_django	../tests/test_configure_django.py	/^class TestConfigure_django(unittest.TestCase):$/;"	kind:class	line:12
+__email__	../configure_django/__init__.py	/^__email__ = 'pydanny@gmail.com'$/;"	kind:variable	line:6
+__init__.py	../configure_django/__init__.py	1;"	kind:file	line:1
+__init__.py	../tests/__init__.py	1;"	kind:file	line:1
+__version__	../configure_django/__init__.py	/^__version__ = '0.1.5'$/;"	kind:variable	line:7
+author	../setup.py	/^    author="Daniel Roy Greenfeld",$/;"	kind:variable	line:32
+author_email	../setup.py	/^    author_email='pydanny@gmail.com',$/;"	kind:variable	line:33
+call_command	../configure_django/configure_django.py	/^from django.core.management import call_command$/;"	kind:namespace	line:10
+classifiers	../setup.py	/^    classifiers=[$/;"	kind:variable	line:34
+configure	../configure_django/__init__.py	/^from .configure_django import configure/;"	kind:namespace	line:9
+configure	../configure_django/configure_django.py	/^def configure(settings=None, command=None, run_migrations=False):$/;"	kind:function	line:16
+configure_django	../tests/test_configure_django.py	/^from configure_django import configure_django$/;"	kind:namespace	line:9
+configure_django.py	../configure_django/configure_django.py	1;"	kind:file	line:1
+description	../setup.py	/^    description="A package for configuring Django in non-traditional environments.",$/;"	kind:variable	line:43
+django	../configure_django/configure_django.py	/^import django$/;"	kind:namespace	line:7
+find_packages	../setup.py	/^from setuptools import setup, find_packages$/;"	kind:namespace	line:7
+history	../setup.py	/^    history = history_file.read()$/;"	kind:variable	line:13
+include_package_data	../setup.py	/^    include_package_data=True,$/;"	kind:variable	line:48
+install_requires	../setup.py	/^    install_requires=requirements,$/;"	kind:variable	line:44
+keywords	../setup.py	/^    keywords='configure_django',$/;"	kind:variable	line:49
+license	../setup.py	/^    license="Apache Software License 2.0",$/;"	kind:variable	line:45
+long_description	../setup.py	/^    long_description=readme + '\\n\\n' + history,$/;"	kind:variable	line:46
+long_description_content_type	../setup.py	/^    long_description_content_type="text\/markdown",$/;"	kind:variable	line:47
+name	../setup.py	/^    name='configure_django',$/;"	kind:variable	line:50
+os	../configure_django/configure_django.py	/^import os$/;"	kind:namespace	line:5
+os	../setup.py	/^import sys, os$/;"	kind:namespace	line:6
+packages	../setup.py	/^    packages=find_packages(include=['configure_django']),$/;"	kind:variable	line:51
+readme	../setup.py	/^    readme = readme_file.read()$/;"	kind:variable	line:10
+requirements	../setup.py	/^requirements = []$/;"	kind:variable	line:25
+setUp	../tests/test_configure_django.py	/^    def setUp(self):$/;"	kind:member	line:15
+settings	../configure_django/configure_django.py	/^from django.conf import settings$/;"	kind:namespace	line:8
+setup	../setup.py	/^from setuptools import setup, find_packages$/;"	kind:namespace	line:7
+setup.py	../setup.py	1;"	kind:file	line:1
+setup_requirements	../setup.py	/^setup_requirements = []$/;"	kind:variable	line:27
+setup_requires	../setup.py	/^    setup_requires=setup_requirements,$/;"	kind:variable	line:52
+sys	../setup.py	/^import sys, os$/;"	kind:namespace	line:6
+tearDown	../tests/test_configure_django.py	/^    def tearDown(self):$/;"	kind:member	line:18
+test_000_something	../tests/test_configure_django.py	/^    def test_000_something(self):$/;"	kind:member	line:21
+test_configure_django.py	../tests/test_configure_django.py	1;"	kind:file	line:1
+test_requirements	../setup.py	/^test_requirements = [ ]$/;"	kind:variable	line:29
+test_suite	../setup.py	/^    test_suite='tests',$/;"	kind:variable	line:53
+tests_require	../setup.py	/^    tests_require=test_requirements,$/;"	kind:variable	line:54
+unittest	../tests/test_configure_django.py	/^import unittest$/;"	kind:namespace	line:7
+url	../setup.py	/^    url='https:\/\/github.com\/pydanny\/configure_django',$/;"	kind:variable	line:55
+version	../setup.py	/^    version=version,$/;"	kind:variable	line:56
+version	../setup.py	/^version = '0.1.5'    $/;"	kind:variable	line:15
+zip_safe	../setup.py	/^    zip_safe=False,$/;"	kind:variable	line:57

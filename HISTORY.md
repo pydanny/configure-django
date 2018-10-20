@@ -1,5 +1,9 @@
 # History
 
+## 0.2.0 (2018-10-12)
+
+-   Switch to using python-decouple for env var management
+
 ## 0.1.7 (2018-10-12)
 
 -   Variable naming correction
