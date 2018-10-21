@@ -12,7 +12,7 @@ with open("README.md") as readme_file:
 with open("HISTORY.md") as history_file:
     history = history_file.read()
 
-version = "0.2.3"
+version = "0.2.4"
 
 if sys.argv[-1] == "publish":
     os.system("rm -rf dist")

@@ -44,7 +44,7 @@ def configure(settings=None, command=None, run_migrations=False):
         }
 
         settings = dict(
-            DATABASES=DEBUG,
+            DATABASES=DATABASES,
             INSTALLED_APPS=INSTALLED_APPS,
             ROOT_URLCONF="",  # tests override urlconf, but it still needs to be defined
             MIDDLEWARE_CLASSES=(),
