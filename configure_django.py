@@ -59,8 +59,8 @@ def configure(settings=None, command=None, run_migrations=False):
     # Configure environment
     try:
         django_settings.configure(**settings)
-        # TODO I believe this can be removed
-        django.setup()
+        # # TODO I believe this can be removed
+        # django.setup()
     except RuntimeError:
         pass
 
