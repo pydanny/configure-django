@@ -3,7 +3,6 @@
 """Main module."""
 
 import os
-from pathlib import Path
 import shlex
 
 import django
@@ -14,7 +13,7 @@ from django.core.management import call_command
 from decouple import config
 from dj_database_url import parse as db_url
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # TODO I believe this can be removed
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
@@ -39,7 +38,7 @@ def configure(settings=None, command=None, run_migrations=False):
         DATABASES = {
             "default": config(
                 "DATABASE_URL",
-                default="sqlite:///" + BASE_DIR.child("db.sqlite3"),
+                default=os.path.join(f'sqlite://{BASE_DIR}', 'db.sqlite3'),
                 cast=db_url,
             )
         }

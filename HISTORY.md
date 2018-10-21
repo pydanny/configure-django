@@ -1,5 +1,9 @@
 # History
 
+## 0.2.3 (2018-10-20)
+
+-   Simplify BASE_DIR and sqlite3 paths
+
 ## 0.2.2 (2018-10-20)
 
 -   Add missing BASEDIR variable
