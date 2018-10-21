@@ -1,5 +1,9 @@
 # History
 
+## 0.3.6 (2018-10-21)
+
+-   Bust weird cache issue with version
+
 ## 0.3.5 (2018-10-21)
 
 -   Remove version.py because of package woes

@@ -6,7 +6,7 @@
 import sys, os
 from setuptools import setup
 
-version = "0.3.5"
+version = "0.3.6"
 
 with open("README.md") as readme_file:
     readme = readme_file.read()
@@ -50,7 +50,7 @@ setup(
     include_package_data=True,
     keywords="configure_django",
     name="configure_django",
-    py_modules=["configure_django", 'version'],
+    py_modules=["configure_django"],
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
