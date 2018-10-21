@@ -1,5 +1,17 @@
 # History
 
+## 0.3.4 (2018-10-21)
+
+-   Remove version.py because of package woes
+
+## 0.3.3 (2018-10-21)
+
+-   Fix django apps default
+
+## 0.3.2 (2018-10-21)
+
+-   Remove `django.setup()` to fix tox failures
+
 ## 0.3.1 (2018-10-20)
 
 -   Use Cast properly

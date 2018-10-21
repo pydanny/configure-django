@@ -15,9 +15,9 @@ from dj_database_url import parse as db_url
 
 from version import author, email, version
 
-__author__ = author
-__email__ = email
-__version__ = version
+__author__ = "Daniel Roy Greenfeld"
+__email__ = "pydanny@gmail.com"
+__version__ = "0.3.4"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

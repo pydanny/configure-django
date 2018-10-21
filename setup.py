@@ -5,7 +5,8 @@
 
 import sys, os
 from setuptools import setup
-from version import author, email, version
+
+version = "0.3.4"
 
 with open("README.md") as readme_file:
     readme = readme_file.read()
@@ -28,8 +29,8 @@ setup_requirements = []
 test_requirements = []
 
 setup(
-    author=author,
-    author_email=email,
+    author="Daniel Roy Greenfeld",
+    author_email="pydanny@gmail.com",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
