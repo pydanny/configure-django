@@ -22,7 +22,7 @@ if sys.argv[-1] == "publish":
     os.system("git push --tags")
     sys.exit()
 
-requirements = ["dj-database-url", "python-decouple"]
+requirements = ["dj-database-url", "python-decouple", 'django']
 
 setup_requirements = []
 
