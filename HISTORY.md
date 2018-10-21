@@ -1,5 +1,9 @@
 # History
 
+## 0.3.1 (2018-10-20)
+
+-   Use Cast properly
+
 ## 0.3.0 (2018-10-20)
 
 -   Flatten architecture

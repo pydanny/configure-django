@@ -37,12 +37,8 @@ def configure(settings=None, command=None, run_migrations=False):
     if settings is None:
         INSTALLED_APPS = config(
             "DJANGO_INSTALLED_APPS",
-            cast=list,
-            default=[
-                "django.contrib.auth",
-                "django.contrib.contenttypes",
-                "django.contrib.sites",
-            ],
+            cast=lambda v: [s.strip() for s in v.split(',')],
+            default="django.contrib.auth,django.contrib.contenttypes,django.contrib.sites"
         )
 
         DATABASES = {
