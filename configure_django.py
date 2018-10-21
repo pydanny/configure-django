@@ -58,7 +58,7 @@ def configure(settings=None, command=None, run_migrations=False):
     try:
         django_settings.configure(**settings)
         # # TODO I believe this can be removed
-        # django.setup()
+        django.setup()
     except RuntimeError:
         pass
 
