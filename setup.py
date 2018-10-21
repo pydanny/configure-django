@@ -12,7 +12,7 @@ with open("README.md") as readme_file:
 with open("HISTORY.md") as history_file:
     history = history_file.read()
 
-version = "0.2.0"
+version = "0.2.1"
 
 if sys.argv[-1] == "publish":
     os.system("rm -rf dist")
@@ -36,6 +36,8 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Natural Language :: English",
+        "Framework :: Django",
+        "Framework :: Django :: 2.1",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",

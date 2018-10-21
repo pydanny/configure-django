@@ -1,6 +1,10 @@
 # History
 
-## 0.2.0 (2018-10-12)
+## 0.2.1 (2018-10-20)
+
+-   Switch to using python-decouple for env var management
+
+## 0.2.0 (2018-10-20)
 
 -   Switch to using python-decouple for env var management
 
