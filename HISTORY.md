@@ -1,5 +1,9 @@
 # History
 
+## 0.2.2 (2018-10-20)
+
+-   Add missing BASEDIR variable
+
 ## 0.2.1 (2018-10-20)
 
 -   Switch to using python-decouple for env var management

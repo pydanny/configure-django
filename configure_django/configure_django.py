@@ -14,6 +14,8 @@ from django.core.management import call_command
 from decouple import config
 from dj_database_url import parse as db_url
 
+BASE_DIR = Path(__file__).parent
+
 # TODO I believe this can be removed
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
