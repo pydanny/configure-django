@@ -1,5 +1,9 @@
 # History
 
+## 0.3.5 (2018-10-21)
+
+-   Remove version.py because of package woes
+
 ## 0.3.4 (2018-10-21)
 
 -   Remove version.py because of package woes
