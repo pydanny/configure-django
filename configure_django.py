@@ -13,6 +13,12 @@ from django.core.management import call_command
 from decouple import config
 from dj_database_url import parse as db_url
 
+from version import author, email, version
+
+__author__ = author
+__email__ = email
+__version__ = version
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # TODO I believe this can be removed
@@ -32,13 +38,17 @@ def configure(settings=None, command=None, run_migrations=False):
         INSTALLED_APPS = config(
             "DJANGO_INSTALLED_APPS",
             cast=list,
-            default=['django.contrib.auth','django.contrib.contenttypes','django.contrib.sites'],
+            default=[
+                "django.contrib.auth",
+                "django.contrib.contenttypes",
+                "django.contrib.sites",
+            ],
         )
 
         DATABASES = {
             "default": config(
                 "DATABASE_URL",
-                default=os.path.join(f'sqlite://{BASE_DIR}', 'db.sqlite3'),
+                default=os.path.join(f"sqlite://{BASE_DIR}", "db.sqlite3"),
                 cast=db_url,
             )
         }

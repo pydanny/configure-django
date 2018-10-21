@@ -4,15 +4,14 @@
 """The setup script."""
 
 import sys, os
-from setuptools import setup, find_packages
+from setuptools import setup
+from version import author, email, version
 
 with open("README.md") as readme_file:
     readme = readme_file.read()
 
 with open("HISTORY.md") as history_file:
     history = history_file.read()
-
-version = "0.2.4"
 
 if sys.argv[-1] == "publish":
     os.system("rm -rf dist")
@@ -29,8 +28,8 @@ setup_requirements = []
 test_requirements = []
 
 setup(
-    author="Daniel Roy Greenfeld",
-    author_email="pydanny@gmail.com",
+    author=author,
+    author_email=email,
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
@@ -50,7 +49,7 @@ setup(
     include_package_data=True,
     keywords="configure_django",
     name="configure_django",
-    packages=find_packages(include=["configure_django"]),
+    py_modules=["configure_django", 'version'],
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
